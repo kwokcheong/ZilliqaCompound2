@@ -1,25 +1,31 @@
-import logo from './logo.svg';
+import React, { Component } from 'react';
+import Header from './components/Header';
+import 'bootstrap/dist/css/bootstrap.min.css';
 import './App.css';
+import ZilliqaCompound from './components/ZilliqaCompound';
+import CoinAPI from './components/CoinAPI.js';
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+class App extends Component {
+  constructor(){
+    super();
+    this.state = {
+      coinsAPI:
+       {
+          coins: "digibyte",
+          vs_currency: "sgd"
+       }
+    }
+  };
+
+  render() {
+    return (
+      <div>
+        <Header title="Zilliqa Compound Calculator v2"/>
+        <ZilliqaCompound/>
+        <CoinAPI data={this.state.coinsAPI}/>
+      </div>
+    );
+  }
 }
 
 export default App;
