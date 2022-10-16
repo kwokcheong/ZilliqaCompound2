@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/ZilliqaCompound2/static/css/main.90124e21.css",
+    "main.js": "/ZilliqaCompound2/static/js/main.69d4795a.js",
+    "index.html": "/ZilliqaCompound2/index.html",
+    "main.90124e21.css.map": "/ZilliqaCompound2/static/css/main.90124e21.css.map",
+    "main.69d4795a.js.map": "/ZilliqaCompound2/static/js/main.69d4795a.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.90124e21.css",
+    "static/js/main.69d4795a.js"
+  ]
+}
